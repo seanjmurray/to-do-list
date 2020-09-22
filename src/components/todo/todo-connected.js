@@ -58,7 +58,9 @@ const ToDo = () => {
       mode: 'cors',
     })
       .then(data => data.json())
-      .then(data => setList(data.results))
+      .then(data => {
+        console.log(data)
+        setList(data.results)})
       .catch(console.error);
   };
 
