@@ -1,13 +1,16 @@
 import React from 'react';
 
 import Header from './components/header'
-import ToDo from './components/todo/todo-connected';
+import ToDo from './components/todo/todo';
+import SettingsProvider from './context/settings'
 
 export default function App () {
     return (
       <>
         <Header />
-        <ToDo />
+        <SettingsProvider>
+          <ToDo />
+        </SettingsProvider>
       </>
     );
   }

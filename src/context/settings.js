@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const SettingsContext = React.createContext()
 
 const SettingsProvider = (props) => {
-    const [showComplete, setShowComplete] = useState(true)
+    const [showComplete, setShowComplete] = useState(false)
     const [itemCount, setItemCount] = useState(5)
     const [sortBy, setSort] = useState('difficulty')
 
